@@ -1,154 +1,246 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#E0E0E0"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/photo"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/xoxocoffe" />
-
-    <TextView
-        android:id="@+id/xoxo_text_view"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/photo"
-        android:background="#CFD8DC"
-        android:gravity="center"
-        android:padding="16dp"
-        android:text="XoXo Cafe and roastery"
-        android:textColor="#0277BD"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:orientation="vertical"
+        android:paddingEnd="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/address"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@id/xoxo_text_view"
-        android:padding="10dp"
-        android:src="@drawable/address" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/usa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/xoxo_text_view"
-        android:layout_toRightOf="@id/address"
-        android:fontFamily="sans-serif-light"
-        android:padding="12dp"
-        android:text=" USA_Madina Al Monawara"
-        android:textColor="#0277BD" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/movie2" />
 
-    <ImageView
-        android:id="@+id/ment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@id/address"
-        android:padding="10dp"
-        android:src="@drawable/ment" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/stars_ques"
+                android:textColorHint="#ECEFF1"
+                android:textSize="27sp"
+                android:textStyle="italic" />
+        </RelativeLayout>
 
-    <TextView
-        android:id="@+id/working"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/usa"
-        android:layout_toRightOf="@id/ment"
-        android:fontFamily="sans-serif-light"
-        android:padding="12dp"
-        android:text="Working hours 7:00am - 1:00am"
-        android:textColor="#0277BD" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#FFCCBC"
+            android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/internet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@id/ment"
-        android:padding="10dp"
-        android:src="@drawable/internet" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D84315"
+                android:text="@string/harry_potter_movie_hero_for_the_writer"
+                android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/www"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/working"
-        android:layout_toRightOf="@id/internet"
-        android:fontFamily="sans-serif-light"
-        android:padding="12dp"
-        android:text="www.xoxo.com.sa"
-        android:textAllCaps="true"
-        android:textColor="#0277BD" />
+            <CheckBox
+                android:id="@+id/answer_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/daniel_radcliffe"
+                android:textSize="18sp" />
 
-    <ImageView
-        android:id="@+id/mail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@id/internet"
-        android:padding="10dp"
-        android:src="@drawable/mail" />
+            <CheckBox
+                android:id="@+id/answer_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/daniel_craig"
+                android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/com"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/www"
-        android:layout_toRightOf="@id/mail"
-        android:padding="12dp"
-        android:text="info@xoxo.com.sa"
-        android:textColor="#0277BD" />
+            <CheckBox
+                android:id="@+id/answer_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/j_k_rowling"
+                android:textSize="18sp" />
 
-    <ImageView
-        android:id="@+id/phone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@id/mail"
-        android:padding="10dp"
-        android:src="@drawable/phonelink" />
+            <CheckBox
+                android:id="@+id/answer_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/jane_austen"
+                android:textSize="18sp" />
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/call"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/com"
-        android:layout_toRightOf="@id/phone"
-        android:padding="12dp"
-        android:text="Cell: +966 (0) 53 910 6900"
-        android:textColor="#0277BD" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#FFCCBC"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/Description"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/a"
-        android:layout_below="@id/phone"
-        android:background="#CFD8DC"
-        android:paddingLeft="8dp"
-        android:text="Description:"
-        android:textColor="#0277BD"
-        android:textSize="16dp"
-        android:textStyle="italic" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D84315"
+                android:text="@string/the_character_of_sherlock_holmes_was_to"
+                android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/a"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="#CFD8DC"
-        android:fontFamily="sans-serif-light"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp"
-        android:text="A coffee shop specializing in the preparation of specialized coffee prepared from the finest types of coffee, the cafe also offers dishes of different kinds of sweet pastries, and lemon juice refreshing mint refreshing, and the place is characterized by distinctive design and attractive and comfortable sessions."
-        android:textColor="#0277BD"
-        android:textSize="15dp" />
+            <CheckBox
+                android:id="@+id/answer_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/benedict_cumberbatch"
+                android:textSize="18sp" />
 
-</RelativeLayout>
+            <CheckBox
+                android:id="@+id/answer_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/will_ferrell"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/answer_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/will_smith"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/answer_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/robert_downey_jr"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#FFCCBC"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D84315"
+                android:text="@string/heroes_of_the_series_game_of_thrones"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/answer_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/emilia_clarke"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/answer_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/daniel_craig"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/answer_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/peter_dinklage"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/answer_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/kit_harington"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#FFCCBC"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D84315"
+                android:text="@string/song_in_my_feelings_kiki"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/option_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/drake"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/option_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="@string/justin_bieber"
+                android:textSize="18sp" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/jack_dawson_s_character_in_titanic"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/question_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/he"
+            android:inputType="textPersonName"
+            android:textColorHint="#ffd67c" />
+
+        <TextView
+            android:id="@+id/show_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/points"
+            android:textSize="17sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="submit"
+            android:text="submit"
+            android:textAllCaps="true" />
+
+
+    </LinearLayout>
+</ScrollView>

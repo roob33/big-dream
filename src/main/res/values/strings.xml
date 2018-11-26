@@ -1,3 +1,25 @@
 <resources>
-    <string name="app_name">XoXo</string>
+    <string name="app_name">StarsQues</string>
+    <string name="jane_austen">Jane Austen</string>
+    <string name="j_k_rowling">J. K. Rowling</string>
+    <string name="daniel_craig">Daniel Craig</string>
+    <string name="daniel_radcliffe">Daniel Radcliffe</string>
+    <string name="harry_potter_movie_hero_for_the_writer">Harry Potter movie hero? For the writer?</string>
+    <string name="stars_ques">Stars Ques!</string>
+    <string name="the_character_of_sherlock_holmes_was_to">The Character of SHERLOCK HOLMES was to..?</string>
+    <string name="benedict_cumberbatch">Benedict Cumberbatch</string>
+    <string name="will_ferrell">Will Ferrell</string>
+    <string name="will_smith">Will Smith</string>
+    <string name="robert_downey_jr">Robert Downey Jr</string>
+    <string name="heroes_of_the_series_game_of_thrones">Heroes of the series GAME of THRONES?</string>
+    <string name="emilia_clarke">Emilia Clarke</string>
+    <string name="peter_dinklage">Peter Dinklage</string>
+    <string name="kit_harington">Kit Harington</string>
+    <string name="song_in_my_feelings_kiki">Song In My Feelings-KIKI?</string>
+    <string name="drake">Drake</string>
+    <string name="justin_bieber">Justin Bieber</string>
+    <string name="points">points</string>
+    <string name="jack_dawson_s_character_in_titanic">Jack Dawson\'s character in Titanic?</string>
+    <string name="he">He..?</string>
+    <string name="q1E">Leonardo dicaprio</string>
 </resources>
